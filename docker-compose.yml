@@ -1,0 +1,15 @@
+---
+version: "3.7"
+services:
+  
+   aleph-exporter:
+     image: searchx/aleph-exporter:latest
+     build: 
+       context: .
+       dockerfile: Dockerfile
+     ports:
+     - 8080:8080
+     environement:
+     - ALEPH_HOST=${ALEPH_HOST}
+     - ALEPH_TOKEN=${ALEPH_TOKEN}
+

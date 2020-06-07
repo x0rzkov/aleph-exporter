@@ -1,3 +1,6 @@
 /aleph-exporter
 /vendor
-
+.git
+.git/
+.git/*
+.git/**
